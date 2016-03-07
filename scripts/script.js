@@ -68,12 +68,12 @@ $(function () {
 //    Slider
 
     $slider.slider({
-        value:500,
+        value:3500,
         min: 500,
         max: 10000,
         step: 500,
         slide: function( event, ui ) {
-            $( "#current-amount" ).text( ui.value );
+            $( "#current-amount" ).text( priceCommas(ui.value) );
             $( "#loan-value" ).val( ui.value );
         }
     });
@@ -119,4 +119,31 @@ function replaceBubbleFormUI( form ) {
 
         });
     }
+}
+
+/**
+ * Added format currency with comma
+ * @param str
+ * @returns {string}
+ */
+
+function priceCommas(str) {
+    var parts = (str + "").split("."),
+        main = parts[0],
+        len = main.length,
+        output = "",
+        i = len - 1;
+
+    while(i >= 0) {
+        output = main.charAt(i) + output;
+        if ((len - i) % 3 === 0 && i > 0) {
+            output = "," + output;
+        }
+        --i;
+    }
+    // put decimal part back
+    if (parts.length > 1) {
+        output += "." + parts[1];
+    }
+    return output;
 }

@@ -336,8 +336,9 @@ h4 {
 /* line 1, ../scss/form.scss */
 form {
   padding: 20px 40px;
+  position: relative;
 }
-/* line 3, ../scss/form.scss */
+/* line 4, ../scss/form.scss */
 form input[type="submit"] {
   background-color: #458cc0;
   display: inline-block;
@@ -352,19 +353,19 @@ form input[type="submit"] {
   vertical-align: top;
   box-sizing: border-box;
   width: 100%;
-  margin-top: 25px;
+  margin-top: 10px;
   text-transform: uppercase;
   font-size: 22px;
   line-height: 48px;
   height: 48px;
   transition: all 0.2s ease;
 }
-/* line 23, ../scss/form.scss */
+/* line 24, ../scss/form.scss */
 form input[type="submit"]:hover {
   cursor: pointer;
   background-color: #5495c5;
 }
-/* line 28, ../scss/form.scss */
+/* line 29, ../scss/form.scss */
 form input[type="email"] {
   width: 100%;
   height: 48px;
@@ -376,11 +377,12 @@ form input[type="email"] {
   font-size: 20px;
   outline: none;
 }
-/* line 40, ../scss/form.scss */
+/* line 41, ../scss/form.scss */
 form .email-wrapper {
+  margin-top: 50px;
   position: relative;
 }
-/* line 42, ../scss/form.scss */
+/* line 44, ../scss/form.scss */
 form .email-wrapper:after {
   content: "@";
   width: 38px;
@@ -395,39 +397,101 @@ form .email-wrapper:after {
   top: 1px;
   right: 1px;
 }
-/* line 58, ../scss/form.scss */
+/* line 60, ../scss/form.scss */
 form label.error {
   display: block;
   color: red;
   font-size: 14px;
   line-height: 0;
   position: absolute;
-  top: 60px;
+  top: 120px;
 }
-/* line 65, ../scss/form.scss */
+/* line 67, ../scss/form.scss */
 form label.error:before {
   content: '*';
 }
-/* line 71, ../scss/form.scss */
+/* line 73, ../scss/form.scss */
 form ::-webkit-input-placeholder {
   font-family: 'PT Sans', sans-serif;
 }
-/* line 75, ../scss/form.scss */
+/* line 77, ../scss/form.scss */
 form :-moz-placeholder {
   /* Firefox 18- */
   font-family: 'PT Sans', sans-serif;
 }
-/* line 79, ../scss/form.scss */
+/* line 81, ../scss/form.scss */
 form ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: 'PT Sans', sans-serif;
 }
-/* line 83, ../scss/form.scss */
+/* line 85, ../scss/form.scss */
 form :-ms-input-placeholder {
   font-family: 'PT Sans', sans-serif;
 }
 
 /* line 1, ../scss/slider.scss */
 #slider {
-  margin: 20px 0;
+  margin: 30px 0;
+  height: 7px;
+  background: #cfd0d1;
+  border: 0;
+  border-radius: 3px;
+  position: relative;
+  box-shadow: none;
+}
+
+/* line 10, ../scss/slider.scss */
+.ui-slider-horizontal .ui-slider-handle {
+  top: -1em !important;
+}
+/* line 12, ../scss/slider.scss */
+.ui-slider-horizontal .ui-slider-handle:hover {
+  cursor: pointer;
+}
+/* line 15, ../scss/slider.scss */
+.ui-slider-horizontal .ui-slider-handle:before {
+  content: '\20AC';
+  font-family: 'PT Sans', sans-serif;
+  color: #fff;
+  position: absolute;
+  left: 11px;
+  top: 8px;
+  font-size: 19px;
+}
+
+/* line 27, ../scss/slider.scss */
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border-radius: 35px;
+  width: 35px !important;
+  height: 35px !important;
+  border: none !important;
+  background-color: #458cc0 !important;
+}
+
+/* line 35, ../scss/slider.scss */
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+  background-color: #5495c5 !important;
+}
+
+/* line 47, ../scss/slider.scss */
+.label-min-value {
+  position: absolute;
+  left: 40px;
+  top: 135px;
+  color: #939393;
+  font-size: 14px;
+}
+
+/* line 55, ../scss/slider.scss */
+.label-max-value {
+  position: absolute;
+  right: 40px;
+  top: 135px;
+  color: #939393;
+  font-size: 14px;
 }
