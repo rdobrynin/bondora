@@ -39,4 +39,4 @@ ajax.php controller created in root /ajax.php
 
 ### Demo
 
-[Can be viewed at my private host](http://webdeveloper/bondora)
+[Can be viewed at my private host](http://webdeveloper.ee/bondora)
