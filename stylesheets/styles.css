@@ -89,16 +89,20 @@ body {
 
 /* line 13, ../scss/content.scss */
 a {
-  transition: all 0.2s ease;
   text-decoration: none;
   color: #535e68;
 }
-/* line 17, ../scss/content.scss */
+/* line 16, ../scss/content.scss */
 a:hover, a:focus {
   color: #83aacb;
 }
 
-/* line 22, ../scss/content.scss */
+/* line 21, ../scss/content.scss */
+#email-address a {
+  transition: all 0.2s ease;
+}
+
+/* line 26, ../scss/content.scss */
 h2 {
   color: #458cc0;
   font-size: 30px;
@@ -106,7 +110,7 @@ h2 {
   font-weight: 400;
 }
 
-/* line 29, ../scss/content.scss */
+/* line 33, ../scss/content.scss */
 h4 {
   text-transform: uppercase;
   margin: 0 0 4px;
@@ -117,13 +121,13 @@ h4 {
   text-align: center;
 }
 
-/* line 39, ../scss/content.scss */
+/* line 43, ../scss/content.scss */
 .sub-div {
   background-color: #458cc0;
   height: 216px;
 }
 
-/* line 44, ../scss/content.scss */
+/* line 48, ../scss/content.scss */
 .wrapper {
   max-width: 1024px;
   width: 100%;
@@ -131,19 +135,19 @@ h4 {
   margin: 0 auto;
 }
 @media screen and (max-width: 1023px) {
-  /* line 44, ../scss/content.scss */
+  /* line 48, ../scss/content.scss */
   .wrapper {
     max-width: 96%;
   }
 }
 @media screen and (max-width: 770px) {
-  /* line 44, ../scss/content.scss */
+  /* line 48, ../scss/content.scss */
   .wrapper {
     max-width: 90%;
   }
 }
 
-/* line 58, ../scss/content.scss */
+/* line 82, ../scss/content.scss */
 #content {
   border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -156,7 +160,7 @@ h4 {
   top: -145px;
   position: absolute;
 }
-/* line 66, ../scss/content.scss */
+/* line 90, ../scss/content.scss */
 #content .col-left {
   background-color: #fff;
   width: 63%;
@@ -168,24 +172,24 @@ h4 {
   height: 380px;
   float: left;
 }
-/* line 67, ../scss/content.scss */
+/* line 91, ../scss/content.scss */
 #content .col-left h2 {
   width: 300px;
 }
 @media screen and (max-width: 770px) {
-  /* line 67, ../scss/content.scss */
+  /* line 91, ../scss/content.scss */
   #content .col-left h2 {
     padding-left: 30px;
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 67, ../scss/content.scss */
+  /* line 91, ../scss/content.scss */
   #content .col-left h2 {
     width: 265px;
   }
 }
 @media screen and (max-width: 770px) {
-  /* line 66, ../scss/content.scss */
+  /* line 90, ../scss/content.scss */
   #content .col-left {
     border-radius: 6px 6px 0 0;
     -webkit-border-radius: 6px 6px 0 0;
@@ -196,23 +200,23 @@ h4 {
   }
 }
 @media screen and (max-width: 770px) {
-  /* line 66, ../scss/content.scss */
+  /* line 90, ../scss/content.scss */
   #content .col-left {
     height: auto;
     padding-bottom: 20px;
   }
 }
-/* line 89, ../scss/content.scss */
+/* line 113, ../scss/content.scss */
 #content .col-left .content {
   padding: 70px 20px 40px 70px;
 }
 @media screen and (max-width: 770px) {
-  /* line 89, ../scss/content.scss */
+  /* line 113, ../scss/content.scss */
   #content .col-left .content {
     padding: 20px 0 0 0;
   }
 }
-/* line 94, ../scss/content.scss */
+/* line 118, ../scss/content.scss */
 #content .col-left .content ol {
   display: block;
   padding: 0 0 0 26px;
@@ -222,13 +226,13 @@ h4 {
   margin-top: 20px;
 }
 @media screen and (max-width: 770px) {
-  /* line 94, ../scss/content.scss */
+  /* line 118, ../scss/content.scss */
   #content .col-left .content ol {
     margin-left: 30px;
     padding-right: 30px;
   }
 }
-/* line 106, ../scss/content.scss */
+/* line 130, ../scss/content.scss */
 #content .col-left .content ol li {
   width: 100%;
   margin-right: 44px;
@@ -238,7 +242,7 @@ h4 {
   position: relative;
   font-size: 20px;
 }
-/* line 115, ../scss/content.scss */
+/* line 139, ../scss/content.scss */
 #content .col-left .content ol li:before {
   counter-increment: numList;
   content: counter(numList);
@@ -256,7 +260,7 @@ h4 {
   border-radius: 999px;
   top: 7px;
 }
-/* line 134, ../scss/content.scss */
+/* line 158, ../scss/content.scss */
 #content .col-right {
   background-color: #edeeee;
   border-radius: 0 6px 6px 0;
@@ -269,7 +273,7 @@ h4 {
   float: right;
 }
 @media screen and (max-width: 770px) {
-  /* line 134, ../scss/content.scss */
+  /* line 158, ../scss/content.scss */
   #content .col-right {
     border-radius: 0 0 6px 6px;
     -webkit-border-radius: 0 0 6px 6px;
@@ -279,13 +283,13 @@ h4 {
   }
 }
 @media screen and (max-width: 770px) {
-  /* line 134, ../scss/content.scss */
+  /* line 158, ../scss/content.scss */
   #content .col-right {
     width: 100%;
     margin-bottom: 30px;
   }
 }
-/* line 147, ../scss/content.scss */
+/* line 171, ../scss/content.scss */
 #content .col-right .total-value {
   color: #231f20;
   font-size: 40px;
@@ -293,22 +297,22 @@ h4 {
   font-weight: 700;
   text-align: center;
 }
-/* line 155, ../scss/content.scss */
+/* line 179, ../scss/content.scss */
 #content .sub {
   position: relative;
 }
-/* line 157, ../scss/content.scss */
+/* line 181, ../scss/content.scss */
 #content .sub .turva-logo {
   position: absolute;
   left: 40px;
   top: 13px;
   width: 200px;
 }
-/* line 162, ../scss/content.scss */
+/* line 186, ../scss/content.scss */
 #content .sub .turva-logo span {
   font-size: 13px;
 }
-/* line 164, ../scss/content.scss */
+/* line 188, ../scss/content.scss */
 #content .sub .turva-logo span.big-title {
   position: absolute;
   width: 200px;
@@ -317,7 +321,7 @@ h4 {
   left: 35px;
   cursor: default;
 }
-/* line 172, ../scss/content.scss */
+/* line 196, ../scss/content.scss */
 #content .sub .turva-logo span.small-title {
   position: absolute;
   width: 200px;
@@ -326,7 +330,7 @@ h4 {
   left: 35px;
   cursor: default;
 }
-/* line 183, ../scss/content.scss */
+/* line 207, ../scss/content.scss */
 #content .sub .read-more {
   position: absolute;
   right: 40px;
@@ -334,12 +338,26 @@ h4 {
   font-size: 15px;
   line-height: 60px;
 }
-/* line 189, ../scss/content.scss */
+/* line 213, ../scss/content.scss */
 #content .sub .read-more:before {
   content: '> ';
   font-family: 'PT Sans', sans-serif;
   font-size: 12px;
   color: #B1B1B1;
+}
+@media screen and (min-width: 771px) and (max-width: 978px) {
+  /* line 207, ../scss/content.scss */
+  #content .sub .read-more {
+    line-height: 120px;
+    left: 40px;
+  }
+}
+@media screen and (max-width: 404px) {
+  /* line 207, ../scss/content.scss */
+  #content .sub .read-more {
+    line-height: 120px;
+    left: 40px;
+  }
 }
 
 /* line 1, ../scss/header.scss */
@@ -551,4 +569,69 @@ form :-ms-input-placeholder {
   color: #939393;
   font-size: 14px;
   cursor: default;
+}
+
+/* line 1, ../scss/dialog.scss */
+.modalDialog {
+  position: fixed;
+  font-family: 'PT Sans', sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  -moz-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+  pointer-events: none;
+}
+/* line 11, ../scss/dialog.scss */
+.modal-open .modalDialog {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* line 21, ../scss/dialog.scss */
+.modalDialog > div {
+  width: 450px;
+  height: 170px;
+  position: relative;
+  margin: 20% auto;
+  padding: 20px;
+  background: #fff;
+}
+@media screen and (max-width: 585px) {
+  /* line 21, ../scss/dialog.scss */
+  .modalDialog > div {
+    width: 80%;
+  }
+}
+/* line 31, ../scss/dialog.scss */
+.modalDialog > div h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 70px;
+  cursor: default;
+}
+
+/* line 38, ../scss/dialog.scss */
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
 }

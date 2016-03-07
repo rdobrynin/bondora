@@ -50,12 +50,23 @@ $(function () {
             url: "ajax.php",
             data: data,
             success: function(data) {
-                $(".the-return").html(
-                    "Email: " + data.email + "<br />Total Loan: " + data.loan
-                );
+                setTimeout(function() {
+                    root.addClass('modal-open');
+                    console.log('Email: ' + data.email);
+                    console.log('Loan: ' + data.loan);
+                },400);
             }
         });
         return false;
+    });
+
+
+    // Click outside modal window to close it
+
+    $(document).click(function(event) {
+        if ( !$(event.target).hasClass('target-modal') && !$(event.target).hasClass('modal-title') && root.hasClass('modal-open')) {
+            root.removeClass('modal-open')
+        }
     });
 
 
@@ -77,6 +88,14 @@ $(function () {
             $( "#loan-value" ).val( ui.value );
         }
     });
+
+    //$( "#dialog" ).dialog({
+    //    draggable: false,
+    //    width: 376,
+    //    resizable: true
+    //}).bind('clickoutside', function(e) {
+    //    console.log('test');
+    //});
 });
 // end ready
 

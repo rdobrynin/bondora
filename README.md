@@ -35,7 +35,7 @@ ajax.php controller created in root /ajax.php
 | bondora-phase-1       | empty markup with libs & tools       |
 | bondora-phase-2       | slider functionality                 |
 | bondora-phase-3       | finalize content                     |
-| bondora-phase-4       | JS enhancement                       |
+| bondora-phase-4       | JS enhancement & modal window        |
 
 ### Demo
 

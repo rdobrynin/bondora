@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$middle-grey-color".
-        on line 16 of c:/MAMP/htdocs/bondora/scss/content.scss
+        on line 15 of c:/MAMP/htdocs/bondora/scss/content.scss
 
+10:   }
 11: }
 12: 
 13: a {
-14:   transition: all 0.2s ease;
-15:   text-decoration: none;
-16:   color: $middle-grey-color;
-17:   &:hover, &:focus {
-18:     color: $a-hover-color;
-19:   }
-20: }
-21: 
+14:   text-decoration: none;
+15:   color: $middle-grey-color;
+16:   &:hover, &:focus {
+17:     color: $a-hover-color;
+18:   }
+19: }
+20: #email-address {
 
 Backtrace:
-c:/MAMP/htdocs/bondora/scss/content.scss:16
+c:/MAMP/htdocs/bondora/scss/content.scss:15
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
@@ -66,4 +66,4 @@ C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$middle-grey-color\".\A         on line 16 of c:/MAMP/htdocs/bondora/scss/content.scss\A \A 11: }\A 12: \A 13: a {\A 14:   transition: all 0.2s ease;\A 15:   text-decoration: none;\A 16:   color: $middle-grey-color;\A 17:   &:hover, &:focus {\A 18:     color: $a-hover-color;\A 19:   }\A 20: }\A 21: "; }
+  content: "Error: Undefined variable: \"$middle-grey-color\".\A         on line 15 of c:/MAMP/htdocs/bondora/scss/content.scss\A \A 10:   }\A 11: }\A 12: \A 13: a {\A 14:   text-decoration: none;\A 15:   color: $middle-grey-color;\A 16:   &:hover, &:focus {\A 17:     color: $a-hover-color;\A 18:   }\A 19: }\A 20: #email-address {"; }
