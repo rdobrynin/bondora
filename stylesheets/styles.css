@@ -69,9 +69,3 @@ input::-ms-reveal {
 legend {
   display: none;
 }
-
-/* line 1, ../scss/content.scss */
-body {
-  font-family: 'PT Sans', sans-serif;
-  background-color: #f4f4f4;
-}
