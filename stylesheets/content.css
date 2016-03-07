@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$brand-color".
-        on line 12 of /Applications/MAMP/htdocs/bondora/scss/content.scss
+        on line 13 of /Applications/MAMP/htdocs/bondora/scss/content.scss
 
-7:   font-size: 16px;
 8: }
 9: 
 10: a {
-11:   text-decoration: none;
-12:   color: $brand-color;
-13:   &:hover, &:focus {
-14:     color: $a-hover-color;
-15:   }
-16: }
-17: 
+11:   transition: all 0.2s ease;
+12:   text-decoration: none;
+13:   color: $brand-color;
+14:   &:hover, &:focus {
+15:     color: $a-hover-color;
+16:   }
+17: }
+18: 
 
 Backtrace:
-/Applications/MAMP/htdocs/bondora/scss/content.scss:12
+/Applications/MAMP/htdocs/bondora/scss/content.scss:13
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
@@ -67,4 +67,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$brand-color\".\A         on line 12 of /Applications/MAMP/htdocs/bondora/scss/content.scss\A \A 7:   font-size: 16px;\A 8: }\A 9: \A 10: a {\A 11:   text-decoration: none;\A 12:   color: $brand-color;\A 13:   &:hover, &:focus {\A 14:     color: $a-hover-color;\A 15:   }\A 16: }\A 17: "; }
+  content: "Error: Undefined variable: \"$brand-color\".\A         on line 13 of /Applications/MAMP/htdocs/bondora/scss/content.scss\A \A 8: }\A 9: \A 10: a {\A 11:   transition: all 0.2s ease;\A 12:   text-decoration: none;\A 13:   color: $brand-color;\A 14:   &:hover, &:focus {\A 15:     color: $a-hover-color;\A 16:   }\A 17: }\A 18: "; }

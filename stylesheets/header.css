@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$middle-grey-color".
-        on line 13 of /Applications/MAMP/htdocs/bondora/scss/header.scss
+        on line 14 of /Applications/MAMP/htdocs/bondora/scss/header.scss
 
-8:       top: 22px;
 9:       position: absolute;
 10:     }
 11:   }
 12:   #email-address {
-13:     color: $middle-grey-color;
-14:     position: absolute;
-15:     right: 0;
-16:     top: 45px;
-17:   }
-18: }
+13:     cursor: default;
+14:     color: $middle-grey-color;
+15:     position: absolute;
+16:     right: 0;
+17:     top: 45px;
+18:   }
+19: }
 
 Backtrace:
-/Applications/MAMP/htdocs/bondora/scss/header.scss:13
+/Applications/MAMP/htdocs/bondora/scss/header.scss:14
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
@@ -78,4 +78,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$middle-grey-color\".\A         on line 13 of /Applications/MAMP/htdocs/bondora/scss/header.scss\A \A 8:       top: 22px;\A 9:       position: absolute;\A 10:     }\A 11:   }\A 12:   #email-address {\A 13:     color: $middle-grey-color;\A 14:     position: absolute;\A 15:     right: 0;\A 16:     top: 45px;\A 17:   }\A 18: }"; }
+  content: "Error: Undefined variable: \"$middle-grey-color\".\A         on line 14 of /Applications/MAMP/htdocs/bondora/scss/header.scss\A \A 9:       position: absolute;\A 10:     }\A 11:   }\A 12:   #email-address {\A 13:     cursor: default;\A 14:     color: $middle-grey-color;\A 15:     position: absolute;\A 16:     right: 0;\A 17:     top: 45px;\A 18:   }\A 19: }"; }

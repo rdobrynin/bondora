@@ -83,29 +83,44 @@ body {
 
 /* line 10, ../scss/content.scss */
 a {
+  transition: all 0.2s ease;
   text-decoration: none;
   color: #458cc0;
 }
-/* line 13, ../scss/content.scss */
+/* line 14, ../scss/content.scss */
 a:hover, a:focus {
   color: #83aacb;
 }
 
-/* line 18, ../scss/content.scss */
+/* line 19, ../scss/content.scss */
+h2 {
+  color: #458cc0;
+  font-size: 30px;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+/* line 26, ../scss/content.scss */
 .sub-div {
   background-color: #458cc0;
   height: 216px;
 }
 
-/* line 23, ../scss/content.scss */
+/* line 31, ../scss/content.scss */
 .wrapper {
   max-width: 1024px;
   width: 100%;
   position: relative;
   margin: 0 auto;
 }
+@media screen and (max-width: 1023px) {
+  /* line 31, ../scss/content.scss */
+  .wrapper {
+    max-width: 96%;
+  }
+}
 
-/* line 31, ../scss/content.scss */
+/* line 42, ../scss/content.scss */
 #content {
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -117,6 +132,72 @@ a:hover, a:focus {
   height: 380px;
   top: -145px;
   position: absolute;
+}
+/* line 50, ../scss/content.scss */
+#content .col-left {
+  background-color: #fff;
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -ms-border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
+  width: 65%;
+  height: 380px;
+  float: left;
+}
+/* line 56, ../scss/content.scss */
+#content .col-left .content {
+  padding: 70px 40px 40px 70px;
+  width: 70%;
+}
+/* line 59, ../scss/content.scss */
+#content .col-left .content ul {
+  margin-top: 20px;
+}
+/* line 61, ../scss/content.scss */
+#content .col-left .content ul li {
+  margin-left: -10px;
+  line-height: 46px;
+  font-size: 20px;
+  color: #231f20;
+}
+/* line 64, ../scss/content.scss */
+#content .col-left .content ul li span {
+  position: absolute;
+  left: 10px;
+  top: 2px;
+}
+/* line 69, ../scss/content.scss */
+#content .col-left .content ul li span.circle {
+  color: #fff;
+  background-color: #458cc0;
+  border-radius: 20px;
+  font-size: 19px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font-weight: bold;
+  line-height: 29px;
+  margin-right: 20px;
+  position: relative;
+  top: 8px;
+}
+/* line 90, ../scss/content.scss */
+#content .col-right {
+  background-color: #edeeee;
+  border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+  width: 35%;
+  height: 380px;
+  float: right;
 }
 
 /* line 1, ../scss/header.scss */
@@ -136,6 +217,7 @@ a:hover, a:focus {
 }
 /* line 12, ../scss/header.scss */
 #header #email-address {
+  cursor: default;
   color: #535e68;
   position: absolute;
   right: 0;
