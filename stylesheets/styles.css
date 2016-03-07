@@ -69,3 +69,75 @@ input::-ms-reveal {
 legend {
   display: none;
 }
+
+/* line 1, ../scss/content.scss */
+html {
+  background-color: #f8f8f8;
+}
+
+/* line 5, ../scss/content.scss */
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+}
+
+/* line 10, ../scss/content.scss */
+a {
+  text-decoration: none;
+  color: #458cc0;
+}
+/* line 13, ../scss/content.scss */
+a:hover, a:focus {
+  color: #83aacb;
+}
+
+/* line 18, ../scss/content.scss */
+.sub-div {
+  background-color: #458cc0;
+  height: 216px;
+}
+
+/* line 23, ../scss/content.scss */
+.wrapper {
+  max-width: 1024px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* line 31, ../scss/content.scss */
+#content {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: #fff;
+  width: 100%;
+  height: 380px;
+  top: -145px;
+  position: absolute;
+}
+
+/* line 1, ../scss/header.scss */
+#header {
+  background-color: #fff;
+  height: 100px;
+}
+/* line 4, ../scss/header.scss */
+#header a#logo {
+  height: 100px;
+  left: 0;
+}
+/* line 7, ../scss/header.scss */
+#header a#logo img {
+  top: 22px;
+  position: absolute;
+}
+/* line 12, ../scss/header.scss */
+#header #email-address {
+  color: #535e68;
+  position: absolute;
+  right: 0;
+  top: 45px;
+}
