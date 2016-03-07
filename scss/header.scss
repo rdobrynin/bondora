@@ -7,6 +7,9 @@
     img {
       top: 22px;
       position: absolute;
+      @media screen and (max-width: $mobile-width) {
+        top: 10px;
+      }
     }
   }
   #email-address {
@@ -14,6 +17,11 @@
     color: $middle-grey-color;
     position: absolute;
     right: 0;
-    top: 45px;
+    line-height: 100px;
+    @media screen and (max-width: $mobile-width) {
+      right: 0;
+      top: 30px;
+      left: 49px;
+    }
   }
 }
