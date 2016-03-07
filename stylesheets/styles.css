@@ -107,12 +107,23 @@ h2 {
 }
 
 /* line 29, ../scss/content.scss */
+h4 {
+  text-transform: uppercase;
+  margin: 0 0 4px;
+  color: #7d7d7d;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* line 39, ../scss/content.scss */
 .sub-div {
   background-color: #458cc0;
   height: 216px;
 }
 
-/* line 34, ../scss/content.scss */
+/* line 44, ../scss/content.scss */
 .wrapper {
   max-width: 1024px;
   width: 100%;
@@ -120,19 +131,19 @@ h2 {
   margin: 0 auto;
 }
 @media screen and (max-width: 1023px) {
-  /* line 34, ../scss/content.scss */
+  /* line 44, ../scss/content.scss */
   .wrapper {
     max-width: 96%;
   }
 }
 @media screen and (max-width: 770px) {
-  /* line 34, ../scss/content.scss */
+  /* line 44, ../scss/content.scss */
   .wrapper {
     max-width: 90%;
   }
 }
 
-/* line 48, ../scss/content.scss */
+/* line 58, ../scss/content.scss */
 #content {
   border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -145,10 +156,10 @@ h2 {
   top: -145px;
   position: absolute;
 }
-/* line 56, ../scss/content.scss */
+/* line 66, ../scss/content.scss */
 #content .col-left {
   background-color: #fff;
-  width: 65%;
+  width: 58%;
   border-radius: 6px 0 0 6px;
   -webkit-border-radius: 6px 0 0 6px;
   -moz-border-radius: 6px 0 0 6px;
@@ -157,24 +168,24 @@ h2 {
   height: 380px;
   float: left;
 }
-/* line 57, ../scss/content.scss */
+/* line 67, ../scss/content.scss */
 #content .col-left h2 {
   width: 300px;
 }
 @media screen and (max-width: 770px) {
-  /* line 57, ../scss/content.scss */
+  /* line 67, ../scss/content.scss */
   #content .col-left h2 {
     padding-left: 30px;
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 57, ../scss/content.scss */
+  /* line 67, ../scss/content.scss */
   #content .col-left h2 {
     width: 265px;
   }
 }
 @media screen and (max-width: 770px) {
-  /* line 56, ../scss/content.scss */
+  /* line 66, ../scss/content.scss */
   #content .col-left {
     border-radius: 6px 6px 0 0;
     -webkit-border-radius: 6px 6px 0 0;
@@ -185,24 +196,24 @@ h2 {
   }
 }
 @media screen and (max-width: 770px) {
-  /* line 56, ../scss/content.scss */
+  /* line 66, ../scss/content.scss */
   #content .col-left {
     height: auto;
     padding-bottom: 20px;
   }
 }
-/* line 79, ../scss/content.scss */
+/* line 89, ../scss/content.scss */
 #content .col-left .content {
   padding: 70px 20px 40px 70px;
   width: 100%;
 }
 @media screen and (max-width: 770px) {
-  /* line 79, ../scss/content.scss */
+  /* line 89, ../scss/content.scss */
   #content .col-left .content {
     padding: 20px 0 0 0;
   }
 }
-/* line 87, ../scss/content.scss */
+/* line 97, ../scss/content.scss */
 #content .col-left .content ol {
   display: block;
   padding: 0 0 0 26px;
@@ -212,13 +223,13 @@ h2 {
   margin-top: 20px;
 }
 @media screen and (max-width: 770px) {
-  /* line 87, ../scss/content.scss */
+  /* line 97, ../scss/content.scss */
   #content .col-left .content ol {
     margin-left: 30px;
     padding-right: 30px;
   }
 }
-/* line 99, ../scss/content.scss */
+/* line 109, ../scss/content.scss */
 #content .col-left .content ol li {
   width: 100%;
   margin-right: 44px;
@@ -228,7 +239,7 @@ h2 {
   position: relative;
   font-size: 20px;
 }
-/* line 108, ../scss/content.scss */
+/* line 118, ../scss/content.scss */
 #content .col-left .content ol li:before {
   counter-increment: numList;
   content: counter(numList);
@@ -246,7 +257,7 @@ h2 {
   border-radius: 999px;
   top: 7px;
 }
-/* line 127, ../scss/content.scss */
+/* line 137, ../scss/content.scss */
 #content .col-right {
   background-color: #edeeee;
   border-radius: 0 6px 6px 0;
@@ -254,12 +265,12 @@ h2 {
   -moz-border-radius: 0 6px 6px 0;
   -ms-border-radius: 0 6px 6px 0;
   -o-border-radius: 0 6px 6px 0;
-  width: 35%;
+  width: 42%;
   height: 380px;
   float: right;
 }
 @media screen and (max-width: 770px) {
-  /* line 127, ../scss/content.scss */
+  /* line 137, ../scss/content.scss */
   #content .col-right {
     border-radius: 0 0 6px 6px;
     -webkit-border-radius: 0 0 6px 6px;
@@ -269,11 +280,19 @@ h2 {
   }
 }
 @media screen and (max-width: 770px) {
-  /* line 127, ../scss/content.scss */
+  /* line 137, ../scss/content.scss */
   #content .col-right {
     width: 100%;
     margin-bottom: 30px;
   }
+}
+/* line 150, ../scss/content.scss */
+#content .col-right .total-value {
+  color: #231f20;
+  font-size: 40px;
+  line-height: 43px;
+  font-weight: 700;
+  text-align: center;
 }
 
 /* line 1, ../scss/header.scss */
@@ -312,4 +331,103 @@ h2 {
     top: 30px;
     left: 49px;
   }
+}
+
+/* line 1, ../scss/form.scss */
+form {
+  padding: 20px 40px;
+}
+/* line 3, ../scss/form.scss */
+form input[type="submit"] {
+  background-color: #458cc0;
+  display: inline-block;
+  padding: 0 15px;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  font-family: 'PT Sans',sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 25px;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 48px;
+  height: 48px;
+  transition: all 0.2s ease;
+}
+/* line 23, ../scss/form.scss */
+form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #5495c5;
+}
+/* line 28, ../scss/form.scss */
+form input[type="email"] {
+  width: 100%;
+  height: 48px;
+  padding: 0 40px 0 10px;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #595556;
+  font-size: 20px;
+  outline: none;
+}
+/* line 40, ../scss/form.scss */
+form .email-wrapper {
+  position: relative;
+}
+/* line 42, ../scss/form.scss */
+form .email-wrapper:after {
+  content: "@";
+  width: 38px;
+  height: 46px;
+  color: #8f8e8e;
+  font-size: 18px;
+  line-height: 46px;
+  text-align: center;
+  background: #eceeee;
+  border-radius: 0 4px 4px 0;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
+/* line 58, ../scss/form.scss */
+form label.error {
+  display: block;
+  color: red;
+  font-size: 14px;
+  line-height: 0;
+  position: absolute;
+  top: 60px;
+}
+/* line 65, ../scss/form.scss */
+form label.error:before {
+  content: '*';
+}
+/* line 71, ../scss/form.scss */
+form ::-webkit-input-placeholder {
+  font-family: 'PT Sans', sans-serif;
+}
+/* line 75, ../scss/form.scss */
+form :-moz-placeholder {
+  /* Firefox 18- */
+  font-family: 'PT Sans', sans-serif;
+}
+/* line 79, ../scss/form.scss */
+form ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: 'PT Sans', sans-serif;
+}
+/* line 83, ../scss/form.scss */
+form :-ms-input-placeholder {
+  font-family: 'PT Sans', sans-serif;
+}
+
+/* line 1, ../scss/slider.scss */
+#slider {
+  margin: 20px 0;
 }

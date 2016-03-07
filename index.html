@@ -39,10 +39,22 @@
                       <li>Vali sobiv laenupakkumin</li>
                       <li>Tuvasta ennast ja allkirjasta leping?</li>
                   </ol>
-
               </div>
             </div>
-            <div class="col-right"></div>
+            <div class="col-right">
+                <!--FORM-->
+                <form action="" id="loan-form"  accept-charset="utf-8">
+                    <h4>Laenu Suurus</h4>
+                    <div class="total-value"><span id="current-amount">500</span>&nbsp;&euro;</div>
+                    <div id="slider"></div>
+                    <input type="hidden" id="loan-value" name="loan" value="500" />
+                    <div class="email-wrapper">
+                        <input type="email" name="email" value="" required placeholder="E-posti address:" />
+                    </div>
+                    <input type="submit" name="submit" value="taotle kohe" />
+                </form>
+                <div class="the-return"></div>
+            </div>
         </div>
 </div>
 <!--<form action="" id="loan-form"  accept-charset="utf-8">-->

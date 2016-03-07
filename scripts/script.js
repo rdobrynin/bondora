@@ -12,7 +12,8 @@ $(function () {
 
     //Hoisted variables
     var $form = $('#loan-form'),
-        root = $('html');
+        root = $('html'),
+        $slider = $( "#slider" );
 
 
     // Validate form and rules
@@ -64,6 +65,18 @@ $(function () {
         replaceBubbleFormUI( forms[ i ] );
     }
 
+//    Slider
+
+    $slider.slider({
+        value:500,
+        min: 500,
+        max: 10000,
+        step: 500,
+        slide: function( event, ui ) {
+            $( "#current-amount" ).text( ui.value );
+            $( "#loan-value" ).val( ui.value );
+        }
+    });
 });
 // end ready
 
