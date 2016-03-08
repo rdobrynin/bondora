@@ -97,22 +97,24 @@ legend {
   cursor: pointer;
   background-color: #5495c5;
 }
-/* line 25, ../scss/button.scss */
-.button#taotle-btn {
-  text-indent: 30px;
-}
 /* line 27, ../scss/button.scss */
-.button#taotle-btn:before {
-  position: absolute;
+.button span.icon-note {
+  display: inline-block;
+  text-align: center;
+  padding: 5px 0 5px 40px;
+  position: relative;
   content: '';
-  width: 38px;
   height: 41px;
-  background-size: 329px 248px;
-  background: url("../images/sprite.svg") -10px -7px no-repeat;
-  left: 91px;
+  background: url("../images/sprite.svg") -10px -4px no-repeat;
 }
-/* line 34, ../scss/button.scss */
-.no-svg .button#taotle-btn:before {
+@media screen and (min-width: 770px) and (max-width: 585px) {
+  /* line 27, ../scss/button.scss */
+  .button span.icon-note {
+    font-size: 20px;
+  }
+}
+/* line 38, ../scss/button.scss */
+.no-svg .button span.icon-note {
   background-image: url("../images/sprite.png");
 }
 
@@ -288,7 +290,14 @@ h4 {
   position: relative;
   font-size: 20px;
 }
-/* line 139, ../scss/content.scss */
+@media screen and (max-width: 520px) {
+  /* line 130, ../scss/content.scss */
+  #content .col-left .content ol li {
+    font-size: 17px;
+    line-height: 36px;
+  }
+}
+/* line 143, ../scss/content.scss */
 #content .col-left .content ol li:before {
   counter-increment: numList;
   content: counter(numList);
@@ -306,7 +315,16 @@ h4 {
   border-radius: 999px;
   top: 7px;
 }
-/* line 158, ../scss/content.scss */
+@media screen and (max-width: 520px) {
+  /* line 143, ../scss/content.scss */
+  #content .col-left .content ol li:before {
+    top: 5px;
+    width: 26px;
+    height: 26px;
+    line-height: 28px;
+  }
+}
+/* line 168, ../scss/content.scss */
 #content .col-right {
   background-color: #edeeee;
   border-radius: 0 6px 6px 0;
@@ -319,7 +337,7 @@ h4 {
   float: right;
 }
 @media screen and (max-width: 770px) {
-  /* line 158, ../scss/content.scss */
+  /* line 168, ../scss/content.scss */
   #content .col-right {
     border-radius: 0 0 6px 6px;
     -webkit-border-radius: 0 0 6px 6px;
@@ -329,13 +347,13 @@ h4 {
   }
 }
 @media screen and (max-width: 770px) {
-  /* line 158, ../scss/content.scss */
+  /* line 168, ../scss/content.scss */
   #content .col-right {
     width: 100%;
     margin-bottom: 30px;
   }
 }
-/* line 171, ../scss/content.scss */
+/* line 181, ../scss/content.scss */
 #content .col-right .total-value {
   color: #231f20;
   font-size: 40px;
@@ -343,22 +361,22 @@ h4 {
   font-weight: 700;
   text-align: center;
 }
-/* line 179, ../scss/content.scss */
+/* line 189, ../scss/content.scss */
 #content .sub {
   position: relative;
 }
-/* line 181, ../scss/content.scss */
+/* line 191, ../scss/content.scss */
 #content .sub .turva-logo {
   position: absolute;
   left: 40px;
   top: 13px;
   width: 200px;
 }
-/* line 186, ../scss/content.scss */
+/* line 196, ../scss/content.scss */
 #content .sub .turva-logo span {
   font-size: 13px;
 }
-/* line 188, ../scss/content.scss */
+/* line 198, ../scss/content.scss */
 #content .sub .turva-logo span.big-title {
   position: absolute;
   width: 200px;
@@ -367,7 +385,7 @@ h4 {
   left: 35px;
   cursor: default;
 }
-/* line 196, ../scss/content.scss */
+/* line 206, ../scss/content.scss */
 #content .sub .turva-logo span.small-title {
   position: absolute;
   width: 200px;
@@ -376,7 +394,7 @@ h4 {
   left: 35px;
   cursor: default;
 }
-/* line 207, ../scss/content.scss */
+/* line 217, ../scss/content.scss */
 #content .sub .read-more {
   position: absolute;
   right: 40px;
@@ -384,7 +402,7 @@ h4 {
   font-size: 15px;
   line-height: 60px;
 }
-/* line 213, ../scss/content.scss */
+/* line 223, ../scss/content.scss */
 #content .sub .read-more:before {
   content: '> ';
   font-family: 'PT Sans', sans-serif;
@@ -392,14 +410,14 @@ h4 {
   color: #B1B1B1;
 }
 @media screen and (min-width: 771px) and (max-width: 978px) {
-  /* line 207, ../scss/content.scss */
+  /* line 217, ../scss/content.scss */
   #content .sub .read-more {
     line-height: 120px;
     left: 40px;
   }
 }
 @media screen and (max-width: 404px) {
-  /* line 207, ../scss/content.scss */
+  /* line 217, ../scss/content.scss */
   #content .sub .read-more {
     line-height: 120px;
     left: 40px;
@@ -547,7 +565,7 @@ form :-ms-input-placeholder {
   color: #fff;
   position: absolute;
   left: 11px;
-  top: 8px;
+  top: 9px;
   font-size: 19px;
 }
 
