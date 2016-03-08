@@ -70,6 +70,52 @@ legend {
   display: none;
 }
 
+/* line 1, ../scss/button.scss */
+.button {
+  background-color: #458cc0;
+  display: inline-block;
+  padding: 0 15px;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  font-family: 'PT Sans',sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 48px;
+  height: 50px;
+  transition: all 0.2s ease;
+}
+/* line 21, ../scss/button.scss */
+.button:hover {
+  cursor: pointer;
+  background-color: #5495c5;
+}
+/* line 25, ../scss/button.scss */
+.button#taotle-btn {
+  text-indent: 30px;
+}
+/* line 27, ../scss/button.scss */
+.button#taotle-btn:before {
+  position: absolute;
+  content: '';
+  width: 38px;
+  height: 41px;
+  background-size: 329px 248px;
+  background: url("../images/sprite.svg") -10px -7px no-repeat;
+  left: 91px;
+}
+/* line 34, ../scss/button.scss */
+.no-svg .button#taotle-btn:before {
+  background-image: url("../images/sprite.png");
+}
+
 /* line 1, ../scss/content.scss */
 html {
   background-color: #f8f8f8;
@@ -404,33 +450,6 @@ form {
   position: relative;
 }
 /* line 4, ../scss/form.scss */
-form input[type="submit"] {
-  background-color: #458cc0;
-  display: inline-block;
-  padding: 0 15px;
-  border: 0;
-  border-radius: 3px;
-  color: #fff;
-  font-family: 'PT Sans',sans-serif;
-  font-weight: normal;
-  text-decoration: none;
-  text-align: center;
-  vertical-align: top;
-  box-sizing: border-box;
-  width: 100%;
-  margin-top: 10px;
-  text-transform: uppercase;
-  font-size: 22px;
-  line-height: 48px;
-  height: 50px;
-  transition: all 0.2s ease;
-}
-/* line 24, ../scss/form.scss */
-form input[type="submit"]:hover {
-  cursor: pointer;
-  background-color: #5495c5;
-}
-/* line 29, ../scss/form.scss */
 form input[type="email"] {
   width: 100%;
   height: 50px;
@@ -442,12 +461,12 @@ form input[type="email"] {
   font-size: 20px;
   outline: none;
 }
-/* line 41, ../scss/form.scss */
+/* line 16, ../scss/form.scss */
 form .email-wrapper {
   margin-top: 50px;
   position: relative;
 }
-/* line 44, ../scss/form.scss */
+/* line 19, ../scss/form.scss */
 form .email-wrapper:after {
   content: "@";
   width: 38px;
@@ -462,7 +481,7 @@ form .email-wrapper:after {
   top: 1px;
   right: 1px;
 }
-/* line 60, ../scss/form.scss */
+/* line 35, ../scss/form.scss */
 form label.error {
   display: block;
   color: red;
@@ -471,31 +490,31 @@ form label.error {
   position: absolute;
   top: 120px;
 }
-/* line 67, ../scss/form.scss */
+/* line 42, ../scss/form.scss */
 form label.error:before {
   content: '*';
 }
-/* line 73, ../scss/form.scss */
+/* line 48, ../scss/form.scss */
 form ::-webkit-input-placeholder {
   font-family: 'PT Sans', sans-serif;
   color: #535e68;
   line-height: 22px;
 }
-/* line 79, ../scss/form.scss */
+/* line 54, ../scss/form.scss */
 form :-moz-placeholder {
   /* Firefox 18- */
   font-family: 'PT Sans', sans-serif;
   color: #535e68;
   line-height: 22px;
 }
-/* line 85, ../scss/form.scss */
+/* line 60, ../scss/form.scss */
 form ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: 'PT Sans', sans-serif;
   color: #535e68;
   line-height: 22px;
 }
-/* line 91, ../scss/form.scss */
+/* line 66, ../scss/form.scss */
 form :-ms-input-placeholder {
   font-family: 'PT Sans', sans-serif;
   color: #535e68;
@@ -579,7 +598,8 @@ form :-ms-input-placeholder {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAHklEQVQ4T2NkYGCoZ6AAMI4awDAaBgyjYcAwLMIAAClPCAHRrlQFAAAAAElFTkSuQmCC);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 99999;
   opacity: 0;
   -webkit-transition: opacity 100ms ease-in;
@@ -587,13 +607,13 @@ form :-ms-input-placeholder {
   transition: opacity 100ms ease-in;
   pointer-events: none;
 }
-/* line 11, ../scss/dialog.scss */
+/* line 12, ../scss/dialog.scss */
 .modal-open .modalDialog {
   opacity: 1;
   pointer-events: auto;
 }
 
-/* line 21, ../scss/dialog.scss */
+/* line 22, ../scss/dialog.scss */
 .modalDialog > div {
   width: 450px;
   height: 170px;
@@ -603,12 +623,12 @@ form :-ms-input-placeholder {
   background: #fff;
 }
 @media screen and (max-width: 585px) {
-  /* line 21, ../scss/dialog.scss */
+  /* line 22, ../scss/dialog.scss */
   .modalDialog > div {
     width: 80%;
   }
 }
-/* line 31, ../scss/dialog.scss */
+/* line 32, ../scss/dialog.scss */
 .modalDialog > div h3 {
   font-size: 30px;
   text-align: center;
@@ -616,7 +636,7 @@ form :-ms-input-placeholder {
   cursor: default;
 }
 
-/* line 38, ../scss/dialog.scss */
+/* line 39, ../scss/dialog.scss */
 .close {
   background: #606061;
   color: #FFFFFF;

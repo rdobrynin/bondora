@@ -1,3 +1,4 @@
+/* line 1, ../scss/dialog.scss */
 .modalDialog {
   position: fixed;
   font-family: 'PT Sans', sans-serif;
@@ -5,37 +6,45 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background:	url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAHklEQVQ4T2NkYGCoZ6AAMI4awDAaBgyjYcAwLMIAAClPCAHRrlQFAAAAAElFTkSuQmCC);
-  background:	rgba(0, 0, 0, 0.5);
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAHklEQVQ4T2NkYGCoZ6AAMI4awDAaBgyjYcAwLMIAAClPCAHRrlQFAAAAAElFTkSuQmCC);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 99999;
-  opacity:0;
-  .modal-open & {
-    opacity:1;
-    pointer-events: auto;
-  }
+  opacity: 0;
   -webkit-transition: opacity 100ms ease-in;
   -moz-transition: opacity 100ms ease-in;
   transition: opacity 100ms ease-in;
   pointer-events: none;
 }
+/* line 12, ../scss/dialog.scss */
+.modal-open .modalDialog {
+  opacity: 1;
+  pointer-events: auto;
+}
 
+/* line 22, ../scss/dialog.scss */
 .modalDialog > div {
   width: 450px;
-  @media screen and (max-width: 585px) {
-    width: 80%;
-  }
   height: 170px;
   position: relative;
   margin: 20% auto;
   padding: 20px;
   background: #fff;
-  h3 {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 70px;
-    cursor: default;
+}
+@media screen and (max-width: 585px) {
+  /* line 22, ../scss/dialog.scss */
+  .modalDialog > div {
+    width: 80%;
   }
 }
+/* line 32, ../scss/dialog.scss */
+.modalDialog > div h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 70px;
+  cursor: default;
+}
+
+/* line 39, ../scss/dialog.scss */
 .close {
   background: #606061;
   color: #FFFFFF;

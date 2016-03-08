@@ -12,11 +12,9 @@ $error-color: red;
 
 
 // Sizes
-
 $default-width: 1024px;
 
 // Border-radius
-
 $default-border-radius: 6px;
 
 
@@ -24,3 +22,7 @@ $default-border-radius: 6px;
 $desktop-width: 1024px;
 $tablet-width: 1023px;
 $mobile-width: 627px;
+
+// paths
+$sprite-path: '../images/sprite.svg';
+$sprite-png-path: '../images/sprite.png';
