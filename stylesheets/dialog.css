@@ -8,20 +8,23 @@
   left: 0;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAHklEQVQ4T2NkYGCoZ6AAMI4awDAaBgyjYcAwLMIAAClPCAHRrlQFAAAAAElFTkSuQmCC);
   background: rgba(0, 0, 0, 0.5);
-  z-index: 99999;
+  z-index: 0;
   opacity: 0;
+  display: none;
   -webkit-transition: opacity 100ms ease-in;
   -moz-transition: opacity 100ms ease-in;
-  transitiongi: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
   pointer-events: none;
 }
-/* line 12, ../scss/dialog.scss */
+/* line 13, ../scss/dialog.scss */
 .modal-open .modalDialog {
+  display: block;
   opacity: 1;
   pointer-events: auto;
+  z-index: 9999999999;
 }
 
-/* line 22, ../scss/dialog.scss */
+/* line 25, ../scss/dialog.scss */
 .modalDialog > div {
   width: 450px;
   height: 170px;
@@ -31,12 +34,12 @@
   background: #fff;
 }
 @media screen and (max-width: 585px) {
-  /* line 22, ../scss/dialog.scss */
+  /* line 25, ../scss/dialog.scss */
   .modalDialog > div {
     width: 80%;
   }
 }
-/* line 32, ../scss/dialog.scss */
+/* line 35, ../scss/dialog.scss */
 .modalDialog > div h3 {
   font-size: 30px;
   text-align: center;
@@ -44,7 +47,7 @@
   cursor: default;
 }
 
-/* line 39, ../scss/dialog.scss */
+/* line 42, ../scss/dialog.scss */
 .close {
   background: #606061;
   color: #FFFFFF;

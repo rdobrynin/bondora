@@ -7,15 +7,18 @@
   left: 0;
   background:	url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAHklEQVQ4T2NkYGCoZ6AAMI4awDAaBgyjYcAwLMIAAClPCAHRrlQFAAAAAElFTkSuQmCC);
   background:	rgba(0, 0, 0, 0.5);
-  z-index: 99999;
+  z-index: 0;
   opacity:0;
+  display: none;
   .modal-open & {
+    display: block;
     opacity:1;
     pointer-events: auto;
+    z-index:9999999999;
   }
   -webkit-transition: opacity 100ms ease-in;
   -moz-transition: opacity 100ms ease-in;
-  transitiongi: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
   pointer-events: none;
 }
 

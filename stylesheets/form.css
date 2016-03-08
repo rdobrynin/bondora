@@ -2,7 +2,7 @@
 Error: Undefined variable: "$default-border-radius".
         on line 9 of /Applications/MAMP/htdocs/bondora/scss/form.scss
 
-4:   input[type="email"] {
+4:   #email {
 5:     width: 100%;
 6:     height: 50px;
 7:     padding: 0 40px 0 10px;
@@ -80,4 +80,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$default-border-radius\".\A         on line 9 of /Applications/MAMP/htdocs/bondora/scss/form.scss\A \A 4:   input[type=\"email\"] {\A 5:     width: 100%;\A 6:     height: 50px;\A 7:     padding: 0 40px 0 10px;\A 8:     border: 1px solid #c5c5c5;\A 9:     border-radius: $default-border-radius - 2;\A 10:     box-sizing: border-box;\A 11:     color: $middle-grey-color;\A 12:     font-size: 20px;\A 13:     outline: none;\A 14:   }"; }
+  content: "Error: Undefined variable: \"$default-border-radius\".\A         on line 9 of /Applications/MAMP/htdocs/bondora/scss/form.scss\A \A 4:   #email {\A 5:     width: 100%;\A 6:     height: 50px;\A 7:     padding: 0 40px 0 10px;\A 8:     border: 1px solid #c5c5c5;\A 9:     border-radius: $default-border-radius - 2;\A 10:     box-sizing: border-box;\A 11:     color: $middle-grey-color;\A 12:     font-size: 20px;\A 13:     outline: none;\A 14:   }"; }

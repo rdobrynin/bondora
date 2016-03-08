@@ -2,7 +2,7 @@
 
 if (typeof Modernizr != 'undefined') {
     if (Modernizr.svg) $('html').removeClass('no-svg').addClass('svg');
-    if (Modernizr.bgsizecover) $('html').removeClass('no-bgsizecover').addClass('bgsizecover');
+    //if (Modernizr.bgsizecover) $('html').removeClass('no-bgsizecover').addClass('bgsizecover');
 }
 
 
@@ -71,11 +71,12 @@ $(function () {
         }
     });
 
-
     // Replace the validation UI for all forms
-    var forms = document.querySelectorAll( "form" );
-    for ( var i = 0; i < forms.length; i++ ) {
-        replaceBubbleFormUI( forms[ i ] );
+    if(document.addEventListener) {
+        var forms = document.querySelectorAll("form");
+        for (var i = 0; i < forms.length; i++) {
+            replaceBubbleFormUI(forms[i]);
+        }
     }
 
 //    Slider
