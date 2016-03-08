@@ -33,7 +33,6 @@ ajax.php controller created in root /ajax.php
 | Branch                | Description                          | 
 | --------------------- |:------------------------------------:|
 | master                | final,  css & js are not minified    |
-| bondora-production    | minified/compact css/js              |
 | bondora-phase-1       | empty markup with libs & tools       |
 | bondora-phase-2       | slider functionality                 |
 | bondora-phase-3       | finalize content                     |
