@@ -1,0 +1,23 @@
+{
+  "name": "jquery-html5-placeholder-shim",
+  "description": "HTML5 Placeholder support for non compliant browsers using jQuery.",
+  "main": "./jquery.html5-placeholder-shim.js",
+  "homepage": "https://github.com/parndt/jquery-html5-placeholder-shim",
+  "dependencies": {
+    "jquery": ">=1.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/parndt/jquery-html5-placeholder-shim.git"
+  },
+  "_release": "67436f7c44",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "67436f7c448673b760b7df1d6155800fe2f8bf53"
+  },
+  "_source": "git://github.com/parndt/jquery-html5-placeholder-shim.git",
+  "_target": "*",
+  "_originalSource": "jquery-html5-placeholder-shim",
+  "_direct": true
+}

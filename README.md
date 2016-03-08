@@ -8,7 +8,8 @@
 4. [Jquery UI slider] (https://jqueryui.com)
 5. [jQuery UI Touch Punch] (http://touchpunch.furf.com/)
 6. [Jquery validation] (http://jqueryvalidation.org/valid/)
-7. [Compass compiler] (http://compass-style.org/)
+7. [jquery-html5-placeholder-shim] (https://github.com/parndt/jquery-html5-placeholder-shim/)
+8. [Compass compiler] (http://compass-style.org/)
 
 ### Ajax php controller
 

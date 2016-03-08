@@ -61,11 +61,13 @@ $(function () {
     });
 
 
-    // Click outside modal window to close it
+    // Click or tap outside modal window to close it
 
-    $(document).click(function(event) {
-        if ( !$(event.target).hasClass('target-modal') && !$(event.target).hasClass('modal-title') && root.hasClass('modal-open')) {
-            root.removeClass('modal-open')
+    $(document).on('click touchstart', function (event){
+    if(!root.hasClass('open-modal')) {
+            if ( !$(event.target).hasClass('target-modal') && !$(event.target).hasClass('modal-title')) {
+                root.removeClass('modal-open')
+            }
         }
     });
 
@@ -77,7 +79,6 @@ $(function () {
     }
 
 //    Slider
-
     $slider.slider({
         value:3500,
         min: 500,
@@ -88,14 +89,6 @@ $(function () {
             $( "#loan-value" ).val( ui.value );
         }
     });
-
-    //$( "#dialog" ).dialog({
-    //    draggable: false,
-    //    width: 376,
-    //    resizable: true
-    //}).bind('clickoutside', function(e) {
-    //    console.log('test');
-    //});
 });
 // end ready
 
