@@ -114,7 +114,7 @@ legend {
   height: 41px;
   background: transparent url("../images/sprite.png") -10px -4px no-repeat;
 }
-@media screen and (min-width: 585px) and (max-width: 770px) {
+@media screen and (min-width: 585px) and (max-width: 810px) {
   /* line 31, ../scss/button.scss */
   .button span.icon-note {
     font-size: 20px;
@@ -643,14 +643,14 @@ form :-ms-input-placeholder {
 
 /* line 25, ../scss/dialog.scss */
 .modalDialog > div {
-  width: 450px;
+  width: 650px;
   height: 170px;
   position: relative;
   margin: 20% auto;
   padding: 20px;
   background: #fff;
 }
-@media screen and (max-width: 585px) {
+@media screen and (max-width: 670px) {
   /* line 25, ../scss/dialog.scss */
   .modalDialog > div {
     width: 80%;
