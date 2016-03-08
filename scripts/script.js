@@ -2,7 +2,6 @@
 
 if (typeof Modernizr != 'undefined') {
     if (Modernizr.svg) $('html').removeClass('no-svg').addClass('svg');
-    //if (Modernizr.bgsizecover) $('html').removeClass('no-bgsizecover').addClass('bgsizecover');
 }
 
 
@@ -39,7 +38,7 @@ $(function () {
 
     // Ajax submit form
     $form.submit(function(){
-    if($form.valid() == false) return false;
+        if($form.valid() == false) return false;
         var data = {
             "action": "test"
         };
@@ -64,7 +63,7 @@ $(function () {
     // Click or tap outside modal window to close it
 
     $(document).on('click touchstart', function (event){
-    if(!root.hasClass('open-modal')) {
+        if(!root.hasClass('open-modal')) {
             if ( !$(event.target).hasClass('target-modal') && !$(event.target).hasClass('modal-title')) {
                 root.removeClass('modal-open')
             }

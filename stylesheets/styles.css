@@ -202,7 +202,7 @@ h4 {
   }
 }
 
-/* line 82, ../scss/content.scss */
+/* line 61, ../scss/content.scss */
 #content {
   border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -215,7 +215,7 @@ h4 {
   top: -145px;
   position: absolute;
 }
-/* line 90, ../scss/content.scss */
+/* line 69, ../scss/content.scss */
 #content .col-left {
   background-color: #fff;
   width: 63%;
@@ -227,24 +227,24 @@ h4 {
   height: 380px;
   float: left;
 }
-/* line 91, ../scss/content.scss */
+/* line 70, ../scss/content.scss */
 #content .col-left h2 {
   width: 300px;
 }
 @media screen and (max-width: 770px) {
-  /* line 91, ../scss/content.scss */
+  /* line 70, ../scss/content.scss */
   #content .col-left h2 {
     padding-left: 30px;
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 91, ../scss/content.scss */
+  /* line 70, ../scss/content.scss */
   #content .col-left h2 {
     width: 265px;
   }
 }
 @media screen and (max-width: 770px) {
-  /* line 90, ../scss/content.scss */
+  /* line 69, ../scss/content.scss */
   #content .col-left {
     border-radius: 6px 6px 0 0;
     -webkit-border-radius: 6px 6px 0 0;
@@ -255,23 +255,23 @@ h4 {
   }
 }
 @media screen and (max-width: 770px) {
-  /* line 90, ../scss/content.scss */
+  /* line 69, ../scss/content.scss */
   #content .col-left {
     height: auto;
     padding-bottom: 20px;
   }
 }
-/* line 113, ../scss/content.scss */
+/* line 92, ../scss/content.scss */
 #content .col-left .content {
   padding: 70px 20px 40px 70px;
 }
 @media screen and (max-width: 770px) {
-  /* line 113, ../scss/content.scss */
+  /* line 92, ../scss/content.scss */
   #content .col-left .content {
     padding: 20px 0 0 0;
   }
 }
-/* line 118, ../scss/content.scss */
+/* line 97, ../scss/content.scss */
 #content .col-left .content ol {
   display: block;
   padding: 0 0 0 26px;
@@ -281,13 +281,13 @@ h4 {
   margin-top: 20px;
 }
 @media screen and (max-width: 770px) {
-  /* line 118, ../scss/content.scss */
+  /* line 97, ../scss/content.scss */
   #content .col-left .content ol {
     margin-left: 30px;
     padding-right: 30px;
   }
 }
-/* line 130, ../scss/content.scss */
+/* line 109, ../scss/content.scss */
 #content .col-left .content ol li {
   width: 100%;
   margin-right: 44px;
@@ -298,13 +298,13 @@ h4 {
   font-size: 20px;
 }
 @media screen and (max-width: 520px) {
-  /* line 130, ../scss/content.scss */
+  /* line 109, ../scss/content.scss */
   #content .col-left .content ol li {
     font-size: 17px;
     line-height: 36px;
   }
 }
-/* line 143, ../scss/content.scss */
+/* line 122, ../scss/content.scss */
 #content .col-left .content ol li:before {
   counter-increment: numList;
   content: counter(numList);
@@ -323,7 +323,7 @@ h4 {
   top: 7px;
 }
 @media screen and (max-width: 520px) {
-  /* line 143, ../scss/content.scss */
+  /* line 122, ../scss/content.scss */
   #content .col-left .content ol li:before {
     top: 5px;
     width: 26px;
@@ -331,7 +331,7 @@ h4 {
     line-height: 25px;
   }
 }
-/* line 168, ../scss/content.scss */
+/* line 147, ../scss/content.scss */
 #content .col-right {
   background-color: #edeeee;
   border-radius: 0 6px 6px 0;
@@ -344,7 +344,7 @@ h4 {
   float: right;
 }
 @media screen and (max-width: 770px) {
-  /* line 168, ../scss/content.scss */
+  /* line 147, ../scss/content.scss */
   #content .col-right {
     border-radius: 0 0 6px 6px;
     -webkit-border-radius: 0 0 6px 6px;
@@ -354,13 +354,13 @@ h4 {
   }
 }
 @media screen and (max-width: 770px) {
-  /* line 168, ../scss/content.scss */
+  /* line 147, ../scss/content.scss */
   #content .col-right {
     width: 100%;
     margin-bottom: 30px;
   }
 }
-/* line 181, ../scss/content.scss */
+/* line 160, ../scss/content.scss */
 #content .col-right .total-value {
   color: #231f20;
   font-size: 40px;
@@ -368,22 +368,22 @@ h4 {
   font-weight: 700;
   text-align: center;
 }
-/* line 189, ../scss/content.scss */
+/* line 168, ../scss/content.scss */
 #content .sub {
   position: relative;
 }
-/* line 191, ../scss/content.scss */
+/* line 170, ../scss/content.scss */
 #content .sub .turva-logo {
   position: absolute;
   left: 40px;
   top: 13px;
   width: 200px;
 }
-/* line 196, ../scss/content.scss */
+/* line 175, ../scss/content.scss */
 #content .sub .turva-logo span {
   font-size: 13px;
 }
-/* line 198, ../scss/content.scss */
+/* line 177, ../scss/content.scss */
 #content .sub .turva-logo span.big-title {
   position: absolute;
   width: 200px;
@@ -392,7 +392,7 @@ h4 {
   left: 35px;
   cursor: default;
 }
-/* line 206, ../scss/content.scss */
+/* line 185, ../scss/content.scss */
 #content .sub .turva-logo span.small-title {
   position: absolute;
   width: 200px;
@@ -401,7 +401,7 @@ h4 {
   left: 35px;
   cursor: default;
 }
-/* line 217, ../scss/content.scss */
+/* line 196, ../scss/content.scss */
 #content .sub .read-more {
   position: absolute;
   right: 40px;
@@ -409,7 +409,7 @@ h4 {
   font-size: 15px;
   line-height: 60px;
 }
-/* line 223, ../scss/content.scss */
+/* line 202, ../scss/content.scss */
 #content .sub .read-more:before {
   content: '> ';
   font-family: 'PT Sans', sans-serif;
@@ -417,14 +417,14 @@ h4 {
   color: #B1B1B1;
 }
 @media screen and (min-width: 771px) and (max-width: 978px) {
-  /* line 217, ../scss/content.scss */
+  /* line 196, ../scss/content.scss */
   #content .sub .read-more {
     line-height: 120px;
     left: 40px;
   }
 }
 @media screen and (max-width: 404px) {
-  /* line 217, ../scss/content.scss */
+  /* line 196, ../scss/content.scss */
   #content .sub .read-more {
     line-height: 120px;
     left: 40px;

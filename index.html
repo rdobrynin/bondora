@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Bondora home exercise">
     <meta name="author" content="Roman Dobrynin">
@@ -15,19 +15,19 @@
     <!--[if lte IE 8]>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <![endif]-->
-
     <!--[if lte IE 8]>
-    <link rel="stylesheet" type="text/css" href="stylesheets/ie8.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/ie8.css"/>
     <![endif]-->
-
     <!--[if gt IE 8]>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <![endif]-->
     <script src="bower_components/modernizr-min/dist/modernizr.min.js"></script>
     <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
     <script src="bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-    <script type="text/javascript" src="bower_components/jquery-html5-placeholder-shim/jquery.html5-placeholder-shim.js"></script>
+    <script type="text/javascript"
+            src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript"
+            src="bower_components/jquery-html5-placeholder-shim/jquery.html5-placeholder-shim.js"></script>
     <script src="scripts/script.js"></script>
     <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -40,47 +40,49 @@
 <div id="header">
     <div class="wrapper">
         <a href="/" id="logo"><img src="images/logo.png" height="56" alt="bondora"></a>
-        <span id="email-address">Email:&nbsp;<a href="mailto:roman.dobrynin@gmail.com">klienditugi@bondora.com</a></span>
+        <span id="email-address">Email:&nbsp;<a
+                href="mailto:roman.dobrynin@gmail.com">klienditugi@bondora.com</a></span>
     </div>
 </div>
 <div class="sub-div"></div>
 <div class="wrapper">
-        <div id="content">
-            <div class="col-left">
-              <div class="content">
-                  <h2>Kuidas käib Bondorast laenu taotlemine?</h2>
-                  <ol>
-                      <li>Registreeru ja täida laenutaotlus</li>
-                      <li>Vali sobiv laenupakkumin</li>
-                      <li>Tuvasta ennast ja allkirjasta leping?</li>
-                  </ol>
-              </div>
-            </div>
-            <div class="col-right">
-                <!--FORM-->
-                <form action="" id="loan-form"  accept-charset="utf-8">
-                    <h4>Laenu Suurus</h4>
-                    <div class="total-value"><span id="current-amount">3,500</span>&nbsp;&euro;</div>
-                    <div id="slider"></div>
-                    <span class="label-min-value">500&nbsp;&euro;</span>
-                    <span class="label-max-value">10000&nbsp;&euro;</span>
-                    <input type="hidden" id="loan-value" name="loan" value="3500" />
-                    <div class="email-wrapper">
-                        <input type="email" name="email" value="" id="email" required placeholder="E-posti aaddress:" />
-                    </div>
-                    <button id="taotle-btn" class="button" name="submit" type="submit"><span class="icon-note">taotle kohe</span></button>
-                </form>
-                <div class="the-return"></div>
-               <div class="sub">
-                   <div class="turva-logo">
-                       <img src="images/turva.png" alt="turvalisus">
-                       <span class="big-title">Turvalisus ja priivaatsus</span>
-                       <span class="small-title">kaitstud</span>
-                   </div>
-                   <a href="javascript:void(0);" class="read-more">Loe rohkem</a>
-               </div>
+    <div id="content">
+        <div class="col-left">
+            <div class="content">
+                <h2>Kuidas käib Bondorast laenu taotlemine?</h2>
+                <ol>
+                    <li>Registreeru ja täida laenutaotlus</li>
+                    <li>Vali sobiv laenupakkumin</li>
+                    <li>Tuvasta ennast ja allkirjasta leping?</li>
+                </ol>
             </div>
         </div>
+        <div class="col-right">
+            <!--FORM-->
+            <form action="" id="loan-form" accept-charset="utf-8">
+                <h4>Laenu Suurus</h4>
+                <div class="total-value"><span id="current-amount">3,500</span>&nbsp;&euro;</div>
+                <div id="slider"></div>
+                <span class="label-min-value">500&nbsp;&euro;</span>
+                <span class="label-max-value">10000&nbsp;&euro;</span>
+                <input type="hidden" id="loan-value" name="loan" value="3500"/>
+                <div class="email-wrapper">
+                    <input type="email" name="email" value="" id="email" required placeholder="E-posti aaddress:"/>
+                </div>
+                <button id="taotle-btn" class="button" name="submit" type="submit"><span
+                        class="icon-note">taotle kohe</span></button>
+            </form>
+            <div class="the-return"></div>
+            <div class="sub">
+                <div class="turva-logo">
+                    <img src="images/turva.png" alt="turvalisus">
+                    <span class="big-title">Turvalisus ja priivaatsus</span>
+                    <span class="small-title">kaitstud</span>
+                </div>
+                <a href="javascript:void(0);" class="read-more">Loe rohkem</a>
+            </div>
+        </div>
+    </div>
 </div>
 <div id="openModal" class="modalDialog">
     <div class="target-modal">
