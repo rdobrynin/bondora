@@ -18,6 +18,10 @@
   line-height: 48px;
   height: 50px;
   transition: all 0.2s ease;
+  @media screen and (max-width: 770px) {
+  font-size: 20px;
+    line-height: 2.2;
+  }
   &:hover {
     cursor: pointer;
     background-color: lighten($brand-color, 4%);
@@ -31,8 +35,9 @@
     position: relative;
     content: '';
     height: 41px;
-    @media screen and (min-width: 770px) and (max-width: 585px) {
+    @media screen and (min-width: 585px) and (max-width: 770px) {
       font-size: 20px;
+
     }
     background:url($sprite-path) -10px -4px no-repeat;
     .no-svg & { background-image:url($sprite-png-path); }

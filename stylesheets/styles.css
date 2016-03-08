@@ -92,12 +92,19 @@ legend {
   height: 50px;
   transition: all 0.2s ease;
 }
-/* line 21, ../scss/button.scss */
+@media screen and (max-width: 770px) {
+  /* line 1, ../scss/button.scss */
+  .button {
+    font-size: 20px;
+    line-height: 2.2;
+  }
+}
+/* line 25, ../scss/button.scss */
 .button:hover {
   cursor: pointer;
   background-color: #5495c5;
 }
-/* line 27, ../scss/button.scss */
+/* line 31, ../scss/button.scss */
 .button span.icon-note {
   display: inline-block;
   text-align: center;
@@ -107,13 +114,13 @@ legend {
   height: 41px;
   background: url("../images/sprite.svg") -10px -4px no-repeat;
 }
-@media screen and (min-width: 770px) and (max-width: 585px) {
-  /* line 27, ../scss/button.scss */
+@media screen and (min-width: 585px) and (max-width: 770px) {
+  /* line 31, ../scss/button.scss */
   .button span.icon-note {
     font-size: 20px;
   }
 }
-/* line 38, ../scss/button.scss */
+/* line 43, ../scss/button.scss */
 .no-svg .button span.icon-note {
   background-image: url("../images/sprite.png");
 }
@@ -321,7 +328,7 @@ h4 {
     top: 5px;
     width: 26px;
     height: 26px;
-    line-height: 28px;
+    line-height: 25px;
   }
 }
 /* line 168, ../scss/content.scss */
@@ -552,7 +559,7 @@ form :-ms-input-placeholder {
 
 /* line 10, ../scss/slider.scss */
 .ui-slider-horizontal .ui-slider-handle {
-  top: -1em !important;
+  top: -0.8em !important;
 }
 /* line 12, ../scss/slider.scss */
 .ui-slider-horizontal .ui-slider-handle:hover {
@@ -565,7 +572,7 @@ form :-ms-input-placeholder {
   color: #fff;
   position: absolute;
   left: 11px;
-  top: 9px;
+  top: 8px;
   font-size: 19px;
 }
 
