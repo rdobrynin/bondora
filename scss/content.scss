@@ -1,5 +1,8 @@
 html {
   background-color: #f8f8f8;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+
 }
 
 body {
@@ -68,7 +71,6 @@ h4 {
 
   .col-left {
     h2 {
-      width: 300px;
       @media screen and (max-width: 770px) {
         padding-left: 30px;
       }
